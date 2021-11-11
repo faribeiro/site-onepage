@@ -1,0 +1,454 @@
+/*Resetando todas as tags */
+*{
+	padding: 0px;
+	margin: 0px;	
+}
+/*Formatando a fonte do site */
+body{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 14px;
+	color: #333;
+	line-height: 25px;
+}
+/* Formatando o menu principal */
+header{
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+	padding: 5px;
+	line-height: 40px;
+	position: fixed;
+	z-index: 100;
+}
+header nav{
+	float: left;
+}
+header nav .logo{
+	top: 10px;
+	left: 20px;
+	position: absolute;
+}
+header nav ul{
+	list-style: none;
+	left: 100px;
+	position: absolute;
+}
+header nav ul li{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+}
+header nav ul li a:link,
+header nav ul li a:visited{
+	width: 80px;
+	height: 30px;
+	display: block;
+	text-decoration: none;
+	color: #DDD;
+}
+header nav ul li a:hover,
+header nav ul li a:active{
+	color: #FFF;
+}
+
+/* Redes sociais */
+.redes{
+	width: 50px;
+	height: 240px;
+	left: 10px;
+	position: fixed;
+	z-index: 50;
+	top: 30%;
+}
+.rede{
+	width: 50px;
+	height: 50px;
+	margin-bottom: 10px;
+	transition: 0.4s ease-out;
+	border-radius: 50%;
+	background-color: #FF0;
+}
+.rede:hover{
+	cursor: pointer;
+	transform: translateY(-10px);
+	box-shadow: 5px 5px 5px rgba(50,50,50,0.6);
+}
+.rede#facebook{
+	background-color: #2372A3;
+}
+.rede#twitter{
+	background-color: #0084B4;
+}
+.rede#instagram{
+	background-color: #F90;
+}
+.rede#youtube{
+	background-color: #B00;
+}
+.rede .icone{
+	padding: 10px;
+}
+
+/* Formatação do banner */
+.banner{
+	top: 50px;
+	position: relative;
+}
+.banner img{
+	max-width: 100%;
+}
+.banner .titulo-banner{
+	font-size: 40px;
+	top: 300px;
+	right: 50px;
+	position: absolute;
+	color: #FFF;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px #333;
+}
+.banner .slogan-banner{
+	font-size: 20px;
+	top: 350px;
+	right: 50px;
+	position: absolute;
+	color: #FFF;
+	text-shadow: 2px 2px 2px #333;
+}
+.banner .btn-banner{
+	top: 400px;
+	right: 50px;
+	position: absolute;
+	border-radius: 8px;
+	background-color: #1E90FF;
+	box-shadow: 2px 2px 2px #333;
+	transition: 0.5s ease;
+}
+.banner .btn-banner:hover{
+	background-color: #387BB9;
+}
+.banner .btn-banner a:link,
+.banner .btn-banner a:visited{
+	font-size: 20px;
+	color: #000;
+	text-decoration: none;
+	padding: 20px;
+	display: block;
+	transition: 0.5s ease;
+}
+.banner .btn-banner a:hover,
+.banner .btn-banner a:active{
+	color: #FFF;
+}
+
+/* Formatando o corpo do site */
+.container{
+	width: 80%;
+	margin: 0px auto;
+}
+.titulo{
+	font-family: Lobster, cursive;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+.row{
+	max-width: 100%;
+	text-align: center;
+}
+
+/* Formatação dos serviços */
+.servico{
+	width: 31%;
+	float: left;
+	margin: 0px 1%;	
+}
+.servico .img-servico{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border: 1px solid #58B2F3;
+	box-shadow: 0px 0px 60px #AAA;
+}
+.servico h2{
+	font-size: 30px;
+	line-height: 40px;
+}
+.servico .texto-servico{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.servico .btn-servico{
+	background-color: #777;
+	border-radius: 8px;
+	color: #FFF;
+	padding: 10px;
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+.servico .btn-servico:hover{
+	background-color: #333;
+}
+
+/* Limpando as flutuações */
+.limpa{
+	clear: both;
+	float: none;
+}
+
+/* Formatando as tags hr */
+hr{
+	margin: 30px 0px;
+	border: 0px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Formatando o porfólio */
+.portfolio,
+.img-portfolio{
+	width: 50%;
+}
+.img-portfolio img{
+	max-width: 100%;
+}
+.portfolio h2{
+	font-size: 40px;
+	line-height: 50px;
+}
+.portfolio .destaque{
+	color: #AAA;
+}
+.portfolio p{
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+.portfolio .btn-portfolio{
+	background-color: #FFF;
+	border: 1px solid #6BA0F1;
+	border-radius: 8px;
+	color: #6BA0F1;
+	text-decoration: none;
+	padding: 20px;
+	transition: 0.5s ease;
+}
+.portfolio .btn-portfolio:hover{
+	background-color: #6BA0F1;
+	color: #FFF;
+}
+.esquerda{
+	float: left;
+}
+.direita{
+	float: right;
+}
+
+/* Formatando o formulário */
+form{
+	width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea{
+	width: 95%;
+	padding: 10px;
+	margin: 5px 0px;
+	display: block;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+}
+textarea{
+	resize: none;
+}
+input[type=submit]{
+	background-color: #6BA0F1;
+	color: #FFF;
+	padding: 20px 30px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+input[type=submit]:hover{
+	background-color: #4682B4;
+}
+
+/* Formatando o rodapé */
+footer{
+	background-color: #333;
+	color: #FFF;
+	padding: 20px 0px;
+}
+.whats{
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	transition: 0.5s ease;
+	z-index: 10;
+}
+.whats:hover{
+	transform: translateY(-10px);
+}
+.contato{
+	width: 31%;
+	float: left;
+	margin: 0px 1%;
+	text-align: left;
+}
+.contato .titulo-rodape{
+	font-size: 20px;
+	font-weight: bold;
+}
+.contato h5{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 28px;
+}
+.contato ul{
+	margin-left: 40px;
+}
+.contato a:link,
+.contato a:visited{
+	color: #3C7CED;
+	text-decoration: none;
+}
+.contato a:hover,
+.contato a:active{
+	color: #FFF;
+}
+.assinatura .barra-assinatura{
+	margin: 30px 0px;
+	border: 0px;
+	border-top: 1px solid rgba(255,255,255,0.1);
+}
+.assinatura{
+	text-align: center;
+}
+
+
+/* Mediaquerie - parte responsiva */
+@media only screen and (max-width: 1200px){
+	.banner .titulo-banner{
+		font-size: 30px;
+		top: 200px;
+		right: 50px;
+		position: absolute;
+	}
+	.banner .slogan-banner{
+		font-size: 15px;
+		top: 250px;
+		right: 50px;
+		position: absolute;
+	}
+	.banner .btn-banner{
+		top: 300px;
+		right: 50px;
+		position: absolute;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.banner .titulo-banner{
+		font-size: 20px;
+		top: 100px;
+		right: 50px;
+		position: absolute;
+	}
+	.banner .slogan-banner{
+		font-size: 13px;
+		top: 150px;
+		right: 50px;
+		position: absolute;
+	}
+	.banner .btn-banner{
+		top: 200px;
+		right: 50px;
+		position: absolute;
+	}
+	.banner .btn-banner a:link,
+	.banner .btn-banner a:visited{
+		font-size: 14px;
+		padding: 10px;
+	}
+	.portfolio h2{
+		font-size: 30px;
+		line-height: 50px;
+	}
+	.portfolio p{
+		font-size: 14px;
+		line-height: 30px;
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+	.portfolio .btn-portfolio{
+		padding: 15px;
+	}
+}
+
+@media only screen and (max-width: 650px){
+	.banner .titulo-banner{
+		font-size: 18px;
+		top: 40px;
+		right: 10px;
+		position: absolute;
+	}
+	.banner .slogan-banner{
+		font-size: 13px;
+		top: 60px;
+		right: 10px;
+		position: absolute;
+	}
+	.banner .btn-banner{
+		top: 100px;
+		right: 10px;
+		position: absolute;
+	}
+	.servico{
+		width: 100%;
+		float: none;
+		clear: both;
+		margin-bottom: 50px;
+	}
+	.portfolio, 
+	.img-portfolio{
+		width: 100%;
+	}
+	.esquerda,
+	.direita{
+		float: none;
+		clear: both;
+	}
+	.portfolio h2{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.contato{
+		width: 100%;
+		float: none;
+		clear: both;
+		margin-bottom: 50px;
+	}
+	.redes{
+		width: 40px;
+		height: 200px;
+		left: 10px;
+		top: 40%;
+		position: fixed;
+		z-index: 50;
+	}
+	.rede{
+		width: 40px;
+		height: 40px;
+		margin-bottom: 10px;
+	}
+	.icone{
+		width: 20px;
+		height: 20px;
+		padding: 10px;
+	}
+}
